@@ -1,0 +1,116 @@
+/* Dashboard Component CSS */
+.content-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f8ff;
+  }
+  
+  section {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  section .form_data {
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form_data h1 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form_data p {
+    color: #777;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .form_data form {
+    width: 100%;
+  }
+  
+  .form_data .input_group {
+    margin-bottom: 20px;
+  }
+  
+  .form_data input[type="text"],
+  .form_data input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 18px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form_data input[type="text"]:focus,
+  .form_data input[type="password"]:focus {
+    border-color: #6c63ff;
+  }
+  
+  .form_data .btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #6c63ff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form_data .btn:hover {
+    background-color: #524dff;
+  }
+  
+  .form_data .signup-link {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  
+  .form_data .signup-link a {
+    color: #6c63ff;
+    text-decoration: none;
+  }
+  
+  .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-container input[type="text"] {
+    flex: 1;
+    padding-right: 40px;
+  }
+  
+  .search-btn {
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #6c63ff;
+    font-size: 20px;
+    padding: 10px;
+  }

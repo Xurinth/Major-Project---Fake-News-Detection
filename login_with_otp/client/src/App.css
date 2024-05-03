@@ -1,0 +1,168 @@
+/* Default light theme */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%; /* Make the image cover twice the viewport width */
+  height: 100%; /* Make the image cover the full viewport height */
+  background-image: url('https://wallpapercave.com/wp/wp3396912.jpg');
+  background-size: cover;
+  animation: moveBackground 30s linear infinite; /* Define the animation */
+  z-index: -1;
+  filter: blur(4px); /* Apply blur effect to the background image */
+}
+
+@keyframes moveBackground {
+  0% {
+    transform: translateX(0); /* Start position */
+  }
+  100% {
+    transform: translateX(-50%); /* Move halfway to the left */
+  }
+}
+
+.header {
+  background-color: rgba(69, 59, 47, 0.7);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header .title {
+  font-family: 'Almendra Display', serif;
+  font-size: 2.5rem;
+  color: #F4EDE8;
+}
+
+.header .menu {
+  display: flex;
+  align-items: center;
+}
+
+.header .menu li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.header .menu li a {
+  color: #F4EDE8;
+  text-decoration: none;
+}
+
+.content {
+  padding: 20px 10%;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #453B2F;
+}
+
+.content p {
+  font-size: 1.1rem;
+  color: #453B2F;
+}
+
+.footer {
+  background-color: rgba(69, 59, 47, 0.7);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F4EDE8;
+}
+
+.title::after,
+.title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+.title::before {
+  bottom: -20px;
+}
+
+/* Dark theme */
+body.dark-mode {
+  background-color: #000000; /* Black background */
+}
+
+body.dark-mode::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%; /* Make the image cover twice the viewport width */
+  height: 100%; /* Make the image cover the full viewport height */
+  background-image: url('https://wallpapercave.com/wp/wp3396912.jpg');
+  background-size: cover;
+  animation: moveBackgroundDark 30s linear infinite; /* Define the animation */
+  z-index: -1;
+  filter: blur(8px); /* Apply blur effect to the background image */
+}
+
+@keyframes moveBackgroundDark {
+  0% {
+    transform: translateX(0); /* Start position */
+  }
+  100% {
+    transform: translateX(-50%); /* Move halfway to the left */
+  }
+}
+
+body.dark-mode .header {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+}
+
+body.dark-mode .header .title {
+  color: #F4EDE8;
+}
+
+body.dark-mode .header .menu li a {
+  color: #F4EDE8;
+}
+
+body.dark-mode .content {
+  color: #F4EDE8;
+  background-color: #1f2326; /* Dark grey */
+}
+
+body.dark-mode .content h2 {
+  color: #F4EDE8;
+}
+
+body.dark-mode .content p {
+  color: #F4EDE8;
+}
+
+body.dark-mode .footer {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: #F4EDE8;
+}
+
+.title.dark-mode::after,
+.title.dark-mode::before {
+  background-color: #F4EDE8;
+}
+
+.card-3d-wrap {
+  background-color: rgba(128, 128, 128, 0.5); /* Grey color for card */
+}
