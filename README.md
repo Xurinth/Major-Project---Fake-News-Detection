@@ -21,6 +21,7 @@ This project aims to detect fake news using machine learning techniques. It incl
 - [Suraj Majumder](https://github.com/Xurinth)
 - [Ritushna Roy](https://github.com/Ritushna)
 - [Prima Giri](https://github.com/PrimaGiri)
+
 Feel free to contribute by opening issues or pull requests.
 
 ## License
