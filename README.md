@@ -5,7 +5,7 @@ This project aims to detect fake news using machine learning techniques. It incl
 
 ## Files
 - `PT08v2`: Folder containing the trained model.
-- `login_with_otp`: Folder conrtains the app components of the project.
+- `login_with_otp`: Folder contains the app components of the project.
 - `.gitattributes`: Git attributes file and tracks the files seclected.
 - `PT08.ipynb`: Jupyter Notebook containing the main model training code.
 - `Prediction.ipynb`: Jupyter Notebook containing the code for making predictions using the trained model.
